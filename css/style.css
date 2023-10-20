@@ -1,3 +1,16 @@
 body {
     font-family: 'Roboto', sans-serif;
 }
+
+.bg-header {
+    background-color: #d4e09b;
+}
+.bg-input {
+    background-color: #ffa69e;
+}
+.bg-result {
+    background-color: #cbdfbd;
+}
+.bg-numbers {
+    background-color: #f19c79;
+}
