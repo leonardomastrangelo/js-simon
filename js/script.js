@@ -16,7 +16,7 @@ function myApp() {
     // array of numbers inserted in input by user
     const insertedNumbers = []
     // timer for numbers' disappearance
-    const timerDisappearance = 3;
+    const timeToDisappeare = 3 * 1000;
     // caputing in variable the div in which i print the generated numbers
     const rndNumPrint = document.getElementById("rnd-number")
     // capturing variables from imput
@@ -39,15 +39,19 @@ function myApp() {
         }
     }
 
+    // printing rnd numbers in HTML
     for (let i = 0; i < generatedRndNumbers.length; i++) {
         const element = generatedRndNumbers[i];
         rndNumPrint.innerHTML += 
         `
         <div class="col-4 text-center display-2 py-5">${element}</div>
         `
-        console.log(element, rndNumPrint);
     }
     
-
-
+    // disappereance phase
+    setTimeout(disappearance, timeToDisappeare)
+    function disappearance() {
+        rndNumPrint.classList.add("d-none")
+    }
+    console.log(rndNumPrint);
 }
