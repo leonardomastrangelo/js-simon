@@ -14,3 +14,8 @@ body {
 .bg-numbers {
     background-color: #f19c79;
 }
+.btn-info {
+    position: fixed;
+    top: 0;
+    left: 0;
+}

@@ -31,7 +31,10 @@ function myApp() {
     let score = 0;
     // initializing the message
     let msg = ""
+    // initializing gameOver situation
     let gameOver = false;
+    // taking restart btn
+    const btnRestart = document.querySelector(".btn-info");
     /**
      * EXECUTION
     */
@@ -107,6 +110,17 @@ function myApp() {
             </div>
         </div>
         `
+
+        // // appearance restart button
+        // setTimeout(restartTimer, 3000)
+        // function restartTimer() {
+        //     btnRestart.classList.remove("d-none")
+        // }
+        // // restart the app
+        // btnRestart.addEventListener("click", ()=> {
+        //     myApp
+
+        // })
     }
 
 }
